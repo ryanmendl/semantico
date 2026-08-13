@@ -1,0 +1,97 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .btnnav{
+            border-radius: 10%;
+            margin-left: 10px;
+            height: 30px;
+            width: 110px;
+        }
+
+        .btn:hover{
+            background-color: beige;
+            color: black;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .btnfooter{
+            margin-left: 10px;
+            height:50px ;
+            width: 150px ;
+            background-color:teal ;
+            color:white;
+            border: 0px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .btnfooter:hover{
+            background-color: white;
+            color: bisque;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        #r{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            border: 1px darkred solid;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    /*
+        o @media serve para alterar as propriedades das tags com base no tamnho do dispositivo
+        para garantir a responsividade do site, temos que verificar como fica a estilização
+        em varios tamnhos de telas diferentes, pode ser que no computador fique ok, porem quando acesso
+        pelo celular o site quebre. Nesse caso será necessário aplicar ajustes no tamanho de tela com
+        o @media()
+        
+        * Usamos o !important para forçar a estilização em uma tag, como a tag pode ter id e varias classes
+        o html e css precisam saber qual estilo aplicas, forçamos isso usando o !important no final do atributo
+    */
+
+
+        @media(max-width:750px){
+            button{
+                width: 50px!important;
+                height: 30px !important;
+
+            }
+        }
