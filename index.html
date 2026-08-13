@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .btnnav{
+            border-radius: 10%;
+            margin-left: 10px;
+            height: 30px;
+            width: 110px;
+        }
+
+        .btn:hover{
+            background-color: beige;
+            color: black;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .btnfooter{
+            margin-left: 10px;
+            height:50px ;
+            width: 150px ;
+            background-color:teal ;
+            color:white;
+            border: 0px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .btnfooter:hover{
+            background-color: white;
+            color: bisque;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        #r{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            border: 1px darkred solid;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    /*
+        o @media serve para alterar as propriedades das tags com base no tamnho do dispositivo
+        para garantir a responsividade do site, temos que verificar como fica a estilização
+        em varios tamnhos de telas diferentes, pode ser que no computador fique ok, porem quando acesso
+        pelo celular o site quebre. Nesse caso será necessário aplicar ajustes no tamanho de tela com
+        o @media()
+        
+        * Usamos o !important para forçar a estilização em uma tag, como a tag pode ter id e varias classes
+        o html e css precisam saber qual estilo aplicas, forçamos isso usando o !important no final do atributo
+    */
+
+
+        @media(max-width:750px){
+            button{
+                width: 50px!important;
+                height: 30px !important;
+
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 
+    Semantica : é a parte linguistica que estuda o significado e sentido das palavras !
+    A partir da versão 5 do HTML , surgiram as tags semanticas que descrevem significado
+    das partes do seu site para o navegador e outros desenvolvedores entenderem!
+    -->    
+
+<header style="background-color: aqua; height: 10vh;" > <!--cabeçalho da pagina -->
+
+    <nav>
+        <img src="https://files.meiobit.com/wp-content/uploads/2015/10/20151013coringa.jpg" alt="" height="65px" width="50px">
+        <a href=""><button
+            class="btnnav">Home</button></a>
+        <a href=""><button class="btnnav">Sobre Nós</button></a>
+        <a href=""><button class="btnnav">Trabalhe conosco</button></a>
+    </nav>
+
+</header>
+ 
+<main style="background-color: aquamarine; height: 70vh;"><!-- Conteudo principal, é onde irão as informações do site em si -->
+
+
+
+<section id="r" style="background-color: darkturquoise; height: 40%;"> <!-- Section, é uma sessão da pagina onde voce pode colocar um conteudo
+    Voce pode separar seu site em varias sessões! --> 
+
+    <h1>RYAN MENDONCA DE LIMA</h1>
+    <hr>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Aliquam aliquid commodi vitae quis, eaque quo voluptatum consequatur est cum. Natus, praesentium neque?
+    Ut aliquid sint ea nemo libero voluptatibus sequi!</p>
+
+</section>
+
+<section style="background-color: dodgerblue; height: 60%; display: flex; align-items: center;">
+<div style="width: 50%; height: 100%; background-color: rgb(111, 111, 175);">
+    
+    <div class="card">
+        <h4>CASA EM CAMPOS DO JORDAO</h4>
+        <img src="https://cdn.imoview.com.br/perezefilho/Imoveis/3959/99932-fachada-1-1755199051.jpg?1755199051" alt="" height="150px" width="150px">
+        <p>$: 1.456.060,99</p>
+    </div>
+</div>
+
+<div style="width: 50%; height: 100%; background-color: darkblue;">
+
+        <div class="card" style="border: 1px rgb(0, 238, 255);">
+        <h4>CASA EM GUARAJUBA</h4>
+        <img src="https://b6d3c5t3.delivery.rocketcdn.me/wp-content/uploads/2021/03/Casa-moderna-100-m-da-praia-a-venda-Guarajuba-1-1.jpg" alt="" height="150px" width="150px">
+        <p>$: 1.456.060,99</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer style="background-color: rgb(0, 252, 176); height: 20vh;"> <!-- Footer , é o rodapé da pagina-->
+
+    <nav>
+        <a href=""><button class="btnfooter"> <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/> Instagram </button> </a>
+        <a href=""><button class="btnfooter"> <img width="48" height="48" src="https://img.icons8.com/ios-glyphs/30/tiktok.png" alt="tiktok"/> Tik Tok </button> </a>
+        <a href=""><button class="btnfooter"><img width="50" height="50" src="https://img.icons8.com/ios/50/x.png" alt="x"/> X </button> </a>
+    </nav>
+
+</footer>
+
+</body>
+
+</html>
